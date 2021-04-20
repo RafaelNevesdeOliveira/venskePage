@@ -1,0 +1,18 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  /* alinhamento vertical */
+  align-items: center;
+  /* alinhamento horizontal */
+  justify-content: space-between;
+  background-color: white;
+  padding: 5px;
+}
+
+.container img{
+  width: 300px;
+}
+
+.container a img{
+  width: 40px;
+}

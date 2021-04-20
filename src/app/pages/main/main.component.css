@@ -1,0 +1,31 @@
+.container{
+  background-color: #43d9e7;
+  height: 100%;
+}
+
+
+.movie{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+
+.wrapper-content .movie video{
+
+  margin-right: 20px;
+}
+
+/* .wrapper-content .movie p{
+  text-align: justify;
+  font-family: 'Times New Roman', Times, serif;
+} */
+
+.text p{
+  font: 200;
+  font-size: 17px;
+  color: rgba(0,0,0,0.5);
+  text-align: justify;
+}
