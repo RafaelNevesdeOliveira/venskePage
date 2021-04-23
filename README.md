@@ -1,6 +1,16 @@
-# Vincere
+# Venske Physiotherapy page
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
+
+# Introduction
+
+This pages has the goal to present the work of a client, with no DB or other features.
+
+![image](/src/assets/readmePrints/Picture1.png)
+
+<hr>
+
+![image](/src/assets/readmePrints/Picture2.png)
 
 ## Development server
 
