@@ -10,7 +10,7 @@ import { PagesComponent } from './pages.component';
 @NgModule({
   declarations: [HeaderComponent, MainComponent, FooterComponent, PagesComponent],
   imports: [
-    CommonModule
+    CommonModule,
   ],
   exports:[PagesComponent]
 })
