@@ -10,6 +10,8 @@
 }
 
 body{
-  font-family: 'Times New Roman', Times, serif;
   background-color: #43d9e7;
+  font-family: muli;
+  line-height: 1.8;
+  font-weight: 500;
 }

@@ -1,42 +1,141 @@
-<app-pages></app-pages>
+<!-- Header -->
 
-<div class="carousel">
+<div class="container-header">
+  <img src="../../../assets/images/logo.jpeg" alt="" srcset="">
+  <div class="links">
+    <a href="https://www.instagram.com/fisio.franvenske/?igshid=1aijk5phb9uyt" target="_blank">
+      <img src="../assets/images/instagram-icon.jpeg"/>
+    </a>
+    <a href="https://www.facebook.com/fisio.francielevenske/" target="_blank">
+      <img src="../../../assets/images/facebook-icon.png"/>
+    </a>
+  </div>
+</div>
 
-  <owl-carousel-o [options]="customOptions">
-    <ng-template carouselSlide>
-      <div class="slide">
-        <img class="box-movie" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/c1k1N5rrA6NGhKUZ6hOYR0Am9Ss.jpg" alt="img 1">
-      </div>
-    </ng-template>
-    <ng-template carouselSlide>
-      <div class="slide">
-        <!-- <video width="100%" controls="controls">
-          <iframe src="../../../ass" frameborder="0"></iframe>
-          <source src="../assets/video/Man of Steel - Official Trailer 3 [HD].mp4" type="video/mp4" />
-        </video> -->
-        <img class="box-movie" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/w8Hi3GI4q1oR6EImrDWrAQFn8Ha.jpg" alt="img 1">
-      </div>
-    </ng-template>
-    <ng-template carouselSlide>
-      <div class="slide">
-        <img class="box-movie" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vGIIl89vglo66yUfbuTxzNAs4y5.jpg" alt="img 3">
-      </div>
-    </ng-template>
-    <ng-template carouselSlide>
-      <div class="slide">
-        <img class="box-movie" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/Ar8jquseIADaFtMH6dQpskLwDYf.jpg" alt="img 4">
-      </div>
-    </ng-template>
-    <ng-template carouselSlide>
-      <div class="slide">
-        <img class="box-movie" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/n8eF3o2ldX4ifR5m4G51cjClBP5.jpg" alt="img 5">
-      </div>
-    </ng-template>
-    <ng-template carouselSlide>
-      <div class="slide">
-        <img class="box-movie" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ArWn6gCi61b3b3hclD2L0LOk66k.jpg" alt="img 6">
-      </div>
-    </ng-template>
-  </owl-carousel-o>
+<!-- Main -->
 
+<div class="container-main">
+  <div class="wrapper-content">
+    <div class="movie">
+      <div class="content">
+        <div class="presentation">
+          <div class="photo">
+            <img src="../assets/images/fotoPerfil.jpeg" alt="">
+          </div>
+          <div class="text">
+            <p style="font-size: 25px;">Oi!</p>
+            <p>Me chamo Franciele Venske e sou fisioterapeuta. Minha escolha
+              por essa profissão aconteceu durante a minha adolescência, onde vi
+              nessa carreira a possibilidade de ajudar as pessoas a terem uma vida
+              sem dor.</p>
+            <p>Enquanto dava aulas de pilates fiz minha pós graduação em
+              Terapia Manual e Postural pela Universidade de Maringá, em 2010, me
+              mudei para São Paulo em 2012 e foi aqui que fiz minha Formação
+              Internacional em Microfisioterapia pelo Instituto Salgado, em 2015.</p>
+            <p>Desde então atuo com a técnica e a cada dia me maravilho mais com os
+              seus resultados. Em 2017 comecei minha Pós graduação Internacional
+              em Osteopatia pela Escuela de Osteopatia de Madrid, com previsão de
+              término para junho de 2022, mas já atendo com a técnica desde o
+              início dos estudos. Desde 2005, quando passei no vestibular, até
+              hoje, busco sempre atualizações e conhecimentos para ajudar meus
+              pacientes a terem mais qualidade de vida e viverem livres de dores e
+              limitações, sejam elas físicas e/ou emocionais.</p>
+          </div>
+        </div>
+        <div class="card-promotion">
+          <img src="../../../assets/images/cartao_vip.jpeg" alt="" />
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel">
+
+    <owl-carousel-o class="" [options]="customOptions">
+      <ng-template carouselSlide>
+        <div class="slide">
+          <img class="box-movie" src="../assets/images/chegaDeDor.jpeg" alt="img 1">
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="slide">
+          <img class="box-movie" src="../assets/images/alimentacao.jpeg" alt="img 3">
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="slide">
+          <img class="box-movie" src="../assets/images/atividadeFisica.jpeg" alt="img 4">
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="slide">
+          <img class="box-movie" src="../assets/images/valvulaEscape.jpeg" alt="img 5">
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="slide">
+          <img class="box-movie" src="../assets/images/Sono.jpeg" alt="img 6">
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="slide">
+          <img class="box-movie" src="../assets/images/oqVcAcha.jpeg" alt="img 6">
+        </div>
+      </ng-template>
+
+    </owl-carousel-o>
+
+  </div>
+
+</div>
+
+<!-- Footer -->
+
+<div class="container-footer">
+  <div class="topicos">
+    <div>
+      <ul class="topicos-footer">
+        <h6>
+          <i class="fas fa-map-marker-alt"></i>
+          Endereço
+        </h6>
+        <li>Avenida Nossa Senhora de Sabará, 1077</li>
+        <li>Vila Sofia</li>
+        <li>São Paulo - SP</li>
+        <li>Referência: Fica dentro do box de Crossfit 1077</li>
+      </ul>
+    </div>
+    <div>
+      <ul class="topicos-footer">
+        <h6>Informações de contato</h6>
+        <li>
+          <i class="fas fa-phone-square-alt"></i>
+          Ligar (11) 95423-0818
+        </li>
+        <li>
+          <i class="fas fa-envelope"></i>
+          fisiofrancielevenske@gmail.com
+        </li>
+
+      </ul>
+    </div>
+    <div>
+      <ul class="topicos-footer">
+        <h6>
+          <i class="fas fa-info-circle"></i>
+          Sobre
+        </h6>
+        <li>Microfisioterapia</li>
+        <li>Osteopatia (EOM 2017-2022)</li>
+        <li>Barras de Access</li>
+      </ul>
+    </div>
+  </div>
+  <footer class="rodape">
+    <p class="text-center">
+      © Todos os Direitos reservados a
+      <b>Fisioterapia Venske</b>
+    </p>
+  </footer>
 </div>
