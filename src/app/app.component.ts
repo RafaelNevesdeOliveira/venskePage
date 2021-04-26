@@ -10,7 +10,7 @@ export class AppComponent {
     loop: true,
     margin: 10,
     mouseDrag: true,
-    touchDrag: false,
+    touchDrag: true,
     pullDrag: false,
     nav: true,
     navSpeed: 600,
