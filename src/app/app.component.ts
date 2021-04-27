@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
     mouseDrag: true,
     touchDrag: true,
     pullDrag: false,
-    nav: true,
+    nav: false,
     navSpeed: 600,
     navText: ['&#8249', '&#8250;'],
     responsive: {

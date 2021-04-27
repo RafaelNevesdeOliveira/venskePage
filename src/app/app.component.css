@@ -59,9 +59,6 @@
   width: 400px;
 }
 
-.wrapper-content .content video{
-  margin-right: 20px;
-}
 
 /* .wrapper-content .movie p{
   text-align: justify;
@@ -138,3 +135,61 @@ font-family: 'Roboto', sans-serif;
   text-align: center;
   justify-items: center;
 }
+
+
+
+/* RESPONSIVIDADE */
+@media (max-width:700px) {
+
+  .container-main{
+    height: 70%;
+  }
+
+  .container-header{
+    display: flex;
+    flex-direction: column;
+    /* alinhamento vertical */
+    align-items: center;
+  }
+
+  .container-main .presentation{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-main .presentation img{
+    margin-top: 20px;
+    width: 150px;
+
+  }
+
+  .container-main .card-promotion img{
+    width: 200px;
+  }
+
+  .container-main .text{
+    padding: 0px 20px 0px 20px;
+  }
+
+  .container-main p{
+    margin-top: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-weight: normal;
+
+  }
+
+  .topicos{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .topicos h6{
+    font-size: 16px;
+  }
+
+  .topicos li{
+    font-size: 12px;
+  }
+}
+
