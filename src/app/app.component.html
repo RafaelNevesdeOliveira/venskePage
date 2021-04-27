@@ -1,10 +1,10 @@
 <!-- Header -->
 
 <div class="container-header">
-  <img src="assets/images/logo.jpeg" alt="" srcset="">
+  <img src="assets/images/logo.webp" alt="" srcset="">
   <div class="links">
     <a href="https://www.instagram.com/fisio.franvenske/?igshid=1aijk5phb9uyt" target="_blank">
-      <img src="assets/images/instagram-icon.jpeg"/>
+      <img src="assets/images/instagram-icon.webp"/>
     </a>
     <a href="https://www.facebook.com/fisio.francielevenske/" target="_blank">
       <img src="assets/images/facebook-icon.png"/>
@@ -20,7 +20,7 @@
       <div class="content">
         <div class="presentation">
           <div class="photo">
-            <img src="assets/images/fotoPerfil.jpeg" alt="">
+            <img src="assets/images/fotoPerfil.webp" alt="">
           </div>
           <div class="text">
             <p style="font-size: 25px;">Oi!</p>
@@ -43,7 +43,7 @@
           </div>
         </div>
         <div class="card-promotion">
-          <img src="assets/images/cartao_vip.jpeg" alt="" />
+          <img src="assets/images/cartao_vip.webp" alt="" />
         </div>
 
       </div>
@@ -51,41 +51,13 @@
   </div>
 
   <div class="carousel">
-
-    <owl-carousel-o class="" [options]="customOptions">
-      <ng-template carouselSlide>
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let image of images">
         <div class="slide">
-          <img class="box-movie" src="assets/images/chegaDeDor.jpeg" alt="img 1">
+          <img src="{{ image }}" class="box-movie" alt="" />
         </div>
       </ng-template>
-      <ng-template carouselSlide>
-        <div class="slide">
-          <img class="box-movie" src="assets/images/alimentacao.jpeg" alt="img 3">
-        </div>
-      </ng-template>
-      <ng-template carouselSlide>
-        <div class="slide">
-          <img class="box-movie" src="assets/images/atividadeFisica.jpeg" alt="img 4">
-        </div>
-      </ng-template>
-      <ng-template carouselSlide>
-        <div class="slide">
-          <img class="box-movie" src="assets/images/valvulaEscape.jpeg" alt="img 5">
-        </div>
-      </ng-template>
-      <ng-template carouselSlide>
-        <div class="slide">
-          <img class="box-movie" src="assets/images/Sono.jpeg" alt="img 6">
-        </div>
-      </ng-template>
-      <ng-template carouselSlide>
-        <div class="slide">
-          <img class="box-movie" src="assets/images/oqVcAcha.jpeg" alt="img 6">
-        </div>
-      </ng-template>
-
     </owl-carousel-o>
-
   </div>
 
 </div>
@@ -114,8 +86,9 @@
           Ligar (11) 95423-0818
         </li>
         <li>
-          <i class="fas fa-envelope"></i>
-          fisiofrancielevenske@gmail.com
+          <address>
+            <a href="mailto:fisiofrancielevenske@gmail.com"><font color=white><i class="fas fa-envelope"></i> fisiofrancielevenske@gmail.com</font></a>
+          </address>
         </li>
 
       </ul>
