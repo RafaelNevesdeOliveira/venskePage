@@ -8,12 +8,12 @@ import {OwlOptions} from 'ngx-owl-carousel-o';
 export class AppComponent implements OnInit {
 
   images: string[] = [
-    'assets/images/chegaDeDor.webp',
-    'assets/images/alimentacao.webp',
-    'assets/images/atividadeFisica.webp',
-    'assets/images/valvulaEscape.webp',
-    'assets/images/Sono.webp',
-    'assets/images/oqVcAcha.webp'
+    'https://raw.githubusercontent.com/RafaelNevesdeOliveira/venskePage/testCarousel/src/assets/images/chegaDeDor.webp',
+    'https://raw.githubusercontent.com/RafaelNevesdeOliveira/venskePage/testCarousel/src/assets/images/alimentacao.webp',
+    'https://raw.githubusercontent.com/RafaelNevesdeOliveira/venskePage/testCarousel/src/assets/images/atividadeFisica.webp',
+    'https://raw.githubusercontent.com/RafaelNevesdeOliveira/venskePage/testCarousel/src/assets/images/valvulaEscape.webp',
+    'https://raw.githubusercontent.com/RafaelNevesdeOliveira/venskePage/testCarousel/src/assets/images/Sono.webp',
+    'https://raw.githubusercontent.com/RafaelNevesdeOliveira/venskePage/testCarousel/src/assets/images/oqVcAcha.webp',
   ];
 
   customOptions: OwlOptions = {

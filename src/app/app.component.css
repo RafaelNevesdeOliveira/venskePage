@@ -79,8 +79,8 @@
 /* Carousel */
 
 .box-movie{
-  height:90%;
-  width: 90%;
+  height:100%;
+  width: 100%;
   display: block;
 }
 
@@ -91,10 +91,9 @@
 }
 
 .carousel .slide img{
-  box-shadow:-11px 1px 38px -1px rgb(0 0 0 / 50%)
+  box-shadow:-11px 1px 38px -1px rgb(0 0 0 / 50%);
+
 }
-
-
 
 /* Footer */
 .container-footer {

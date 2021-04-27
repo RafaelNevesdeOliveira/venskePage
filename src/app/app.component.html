@@ -53,8 +53,8 @@
   <div class="carousel">
     <owl-carousel-o [options]="customOptions">
       <ng-template carouselSlide *ngFor="let image of images">
-        <div class="slide">
-          <img src="{{ image }}" class="box-movie" alt="" />
+        <div class="slide" class="box-movie" >
+          <img src="{{ image }}" alt="" />
         </div>
       </ng-template>
     </owl-carousel-o>
