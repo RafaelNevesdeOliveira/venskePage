@@ -8,12 +8,13 @@ import {OwlOptions} from 'ngx-owl-carousel-o';
 export class AppComponent implements OnInit {
 
   images: string[] = [
-    'https://raw.githubusercontent.com/RafaelNevesdeOliveira/venskePage/testCarousel/src/assets/images/chegaDeDor.webp',
-    'https://raw.githubusercontent.com/RafaelNevesdeOliveira/venskePage/testCarousel/src/assets/images/alimentacao.webp',
-    'https://raw.githubusercontent.com/RafaelNevesdeOliveira/venskePage/testCarousel/src/assets/images/atividadeFisica.webp',
-    'https://raw.githubusercontent.com/RafaelNevesdeOliveira/venskePage/testCarousel/src/assets/images/valvulaEscape.webp',
-    'https://raw.githubusercontent.com/RafaelNevesdeOliveira/venskePage/testCarousel/src/assets/images/Sono.webp',
-    'https://raw.githubusercontent.com/RafaelNevesdeOliveira/venskePage/testCarousel/src/assets/images/oqVcAcha.webp',
+    'assets/images/chegaDeDor.jpeg',
+    'assets/images/alimentacao.jpeg',
+    'assets/images/atividadeFisica.jpeg',
+    'assets/images/valvulaEscape.jpeg',
+    'assets/images/Sono.jpeg',
+    'assets/images/oqVcAcha.jpeg',
+
   ];
 
   customOptions: OwlOptions = {
@@ -27,13 +28,13 @@ export class AppComponent implements OnInit {
     navText: ['&#8249', '&#8250;'],
     responsive: {
       0: {
-        items: 2,
+        items: 1,
       },
       600: {
-        items: 3,
+        items: 2,
       },
       1000: {
-        items: 5,
+        items: 3,
       }
     },
   }
