@@ -1,114 +1,184 @@
-<!-- Header -->
-
-<div class="container-header">
-  <img src="assets/images/logo.webp" alt="" srcset="">
-  <div class="links">
-    <a href="https://www.instagram.com/fisio.franvenske/?igshid=1aijk5phb9uyt" target="_blank">
-      <img src="assets/images/instagram-icon.webp"/>
-    </a>
-    <a href="https://www.facebook.com/fisio.francielevenske/" target="_blank">
-      <img src="assets/images/facebook-icon.png"/>
-    </a>
+<nav class="navbar navbar-dark bg-primary">
+  <div class="container-header">
+    <img src="assets/images/logo.webp" alt="" srcset="" />
+    <div class="nav navbar-nav menu">
+      <a
+        class="nav-item nav-link"
+        [class.active]="aba == 'home'"
+        (click)="aba = 'home'"
+        >Sobre</a
+      >
+      <a
+        class="nav-item nav-link"
+        [class.active]="aba == 'services'"
+        (click)="aba = 'services'"
+        >Tratamentos</a
+      >
+      <a
+        class="nav-item nav-link"
+        [class.active]="aba == 'contact'"
+        (click)="aba = 'contact'"
+        >Contato</a
+      >
+    </div>
   </div>
-</div>
+</nav>
 
-<!-- Main -->
+<!-- MAIN -->
+<div class="container" [ngSwitch]="aba">
 
-<div class="container-main">
-  <div class="wrapper-content">
-    <div class="movie">
-      <div class="content">
-        <div class="presentation">
-          <div class="photo">
-            <img src="assets/images/fotoPerfil.webp" alt="">
+  <!-- ABOUT -->
+  <div class="container-main" *ngSwitchDefault="'home'">
+    <div class="wrapper-content">
+      <div class="movie">
+        <div class="content">
+          <div class="presentation">
+            <div class="photo">
+              <img src="assets/images/fotoPerfil.webp" alt="" />
+            </div>
+            <div class="text">
+              <p style="font-size: 25px">Oi!</p>
+              <p>
+                Me chamo Franciele Venske e sou fisioterapeuta. Minha escolha
+                por essa profissão aconteceu durante a minha adolescência, onde
+                vi nessa carreira a possibilidade de ajudar as pessoas a terem
+                uma vida sem dor.
+              </p>
+              <p>
+                Enquanto dava aulas de pilates fiz minha pós graduação em
+                Terapia Manual e Postural pela Universidade de Maringá, em 2010,
+                me mudei para São Paulo em 2012 e foi aqui que fiz minha
+                Formação Internacional em Microfisioterapia pelo Instituto
+                Salgado, em 2015.
+              </p>
+              <p>
+                Desde então atuo com a técnica e a cada dia me maravilho mais
+                com os seus resultados. Em 2017 comecei minha Pós graduação
+                Internacional em Osteopatia pela Escuela de Osteopatia de
+                Madrid, com previsão de término para junho de 2022, mas já
+                atendo com a técnica desde o início dos estudos. Desde 2005,
+                quando passei no vestibular, até hoje, busco sempre atualizações
+                e conhecimentos para ajudar meus pacientes a terem mais
+                qualidade de vida e viverem livres de dores e limitações, sejam
+                elas físicas e/ou emocionais.
+              </p>
+            </div>
           </div>
-          <div class="text">
-            <p style="font-size: 25px;">Oi!</p>
-            <p>Me chamo Franciele Venske e sou fisioterapeuta. Minha escolha
-              por essa profissão aconteceu durante a minha adolescência, onde vi
-              nessa carreira a possibilidade de ajudar as pessoas a terem uma vida
-              sem dor.</p>
-            <p>Enquanto dava aulas de pilates fiz minha pós graduação em
-              Terapia Manual e Postural pela Universidade de Maringá, em 2010, me
-              mudei para São Paulo em 2012 e foi aqui que fiz minha Formação
-              Internacional em Microfisioterapia pelo Instituto Salgado, em 2015.</p>
-            <p>Desde então atuo com a técnica e a cada dia me maravilho mais com os
-              seus resultados. Em 2017 comecei minha Pós graduação Internacional
-              em Osteopatia pela Escuela de Osteopatia de Madrid, com previsão de
-              término para junho de 2022, mas já atendo com a técnica desde o
-              início dos estudos. Desde 2005, quando passei no vestibular, até
-              hoje, busco sempre atualizações e conhecimentos para ajudar meus
-              pacientes a terem mais qualidade de vida e viverem livres de dores e
-              limitações, sejam elas físicas e/ou emocionais.</p>
+          <div class="card-promotion">
+            <img src="assets/images/cartao_vip.webp" alt="" />
           </div>
         </div>
-        <div class="card-promotion">
-          <img src="assets/images/cartao_vip.webp" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <div class="services" *ngSwitchCase="'services'">
+    <div class="treatments" [ngSwitch]="roll">
+
+      <nav class="navbar navbar-dark bg-primary">
+        <div class="container-services">
+          <div class="select">
+            <div class="nav navbar-nav menu">
+              <a
+                class="nav-item nav-link"
+                [class.active]="roll == 'image'"
+                (click)="roll = 'image'"
+                >Sobre</a
+              >
+              <a
+                class="nav-item nav-link"
+                [class.active]="roll == 'services'"
+                (click)="roll = 'services'"
+                >Tratamentos</a
+              >
+              <a
+                class="nav-item nav-link"
+                [class.active]="roll == 'contact'"
+                (click)="roll = 'contact'"
+                >Contato</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+  </div>
+
+  <!-- CONTACT SCREEN -->
+  <div class="contact" *ngSwitchCase="'contact'">
+    <div class="content-contact">
+      <div class="info">
+
+        <div class="map">
+          <a href="https://goo.gl/maps/jamXXcoikAJ32yD7A" target="_blank">
+            <img src="assets/images/mapagoogle.png" />
+          </a>
+        </div>
+
+        <div class="contact-info">
+          <div>
+            <ul class="contact-topics">
+              <h6>
+                <i class="fas fa-info-circle"></i>
+                Informações de contato</h6>
+              <li>
+                <i class="fas fa-phone-square-alt"></i>
+                Ligar (11) 95423-0818
+              </li>
+              <li>
+                <address>
+                  <a href="mailto:fisiofrancielevenske@gmail.com"
+                    ><font color="white"
+                      ><i class="fas fa-envelope"></i>
+                      fisiofrancielevenske@gmail.com</font
+                    ></a
+                  >
+                </address>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="links">
+          <a
+            href="https://www.instagram.com/fisio.franvenske/?igshid=1aijk5phb9uyt"
+            target="_blank"
+          >
+            <img src="assets/images/insta.png" />
+          </a>
+          <a
+            href="https://www.facebook.com/fisio.francielevenske/"
+            target="_blank"
+          >
+            <img src="assets/images/facebook-icon.png" />
+          </a>
         </div>
 
       </div>
     </div>
   </div>
-
-  <div class="carousel">
-    <owl-carousel-o [options]="customOptions">
-      <ng-template carouselSlide *ngFor="let image of images">
-        <div class="slide" class="box-movie" >
-          <img src="{{ image }}" alt="" />
-        </div>
-      </ng-template>
-    </owl-carousel-o>
-  </div>
-
 </div>
 
+
+<div class="carousel">
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide *ngFor="let image of images">
+      <div class="slide" class="box-movie">
+        <img src="{{ image }}" alt="" />
+      </div>
+    </ng-template>
+  </owl-carousel-o>
+</div>
 <!-- Footer -->
 
 <div class="container-footer">
-  <div class="topicos">
-    <div>
-      <ul class="topicos-footer">
-        <h6>
-          <i class="fas fa-map-marker-alt"></i>
-          Endereço
-        </h6>
-        <li>Avenida Nossa Senhora de Sabará, 1077</li>
-        <li>Vila Sofia</li>
-        <li>São Paulo - SP</li>
-        <li>Referência: Fica dentro do box de Crossfit 1077</li>
-      </ul>
-    </div>
-    <div>
-      <ul class="topicos-footer">
-        <h6>Informações de contato</h6>
-        <li>
-          <i class="fas fa-phone-square-alt"></i>
-          Ligar (11) 95423-0818
-        </li>
-        <li>
-          <address>
-            <a href="mailto:fisiofrancielevenske@gmail.com"><font color=white><i class="fas fa-envelope"></i> fisiofrancielevenske@gmail.com</font></a>
-          </address>
-        </li>
-
-      </ul>
-    </div>
-    <div>
-      <ul class="topicos-footer">
-        <h6>
-          <i class="fas fa-info-circle"></i>
-          Sobre
-        </h6>
-        <li>Microfisioterapia</li>
-        <li>Osteopatia (EOM 2017-2022)</li>
-        <li>Barras de Access</li>
-      </ul>
-    </div>
-  </div>
   <footer class="rodape">
     <p class="text-center">
-      © Todos os Direitos reservados a
-      <b>Fisioterapia Venske</b>
+      Avenida Nossa Senhora de Sabará n° 1077 | Vila Sofia | São Paulo - SP |
+      CEP 4685-002
     </p>
   </footer>
 </div>

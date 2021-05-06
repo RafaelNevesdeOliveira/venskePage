@@ -7,6 +7,8 @@ import {OwlOptions} from 'ngx-owl-carousel-o';
 })
 export class AppComponent implements OnInit {
 
+  aba: string = 'home'
+  roll: string  = 'image'
   images: string[] = [
     'assets/images/chegaDeDor.jpeg',
     'assets/images/alimentacao.jpeg',
