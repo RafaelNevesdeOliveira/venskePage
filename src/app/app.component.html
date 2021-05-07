@@ -1,21 +1,21 @@
-<nav class="navbar navbar-dark bg-primary">
+<nav class="">
   <div class="container-header">
     <img src="assets/images/logo.webp" alt="" srcset="" />
     <div class="nav navbar-nav menu-header">
       <a
-        class="nav-item nav-link"
+        class=""
         [class.active]="aba == 'home'"
         (click)="aba = 'home'"
         >Sobre</a
       >
       <a
-        class="nav-item nav-link"
+        class=""
         [class.active]="aba == 'services'"
         (click)="aba = 'services'"
         >Tratamentos</a
       >
       <a
-        class="nav-item nav-link"
+        class=""
         [class.active]="aba == 'contact'"
         (click)="aba = 'contact'"
         >Contato</a
@@ -74,22 +74,22 @@
   <!-- SERVICES -->
   <div class="services" *ngSwitchCase="'services'">
     <div class="treatments" [ngSwitch]="roll">
-      <nav class="navbar navbar-dark bg-primary">
+      <nav class="">
         <div class="menu">
           <a
-            class="nav-item nav-link"
+            class=""
             [class.active]="roll == 'image'"
             (click)="roll = 'image'"
             >Osteopatia</a
           >
           <a
-            class="nav-item nav-link"
+            class=""
             [class.active]="roll == 'microfisio'"
             (click)="roll = 'microfisio'"
             >Microfisioterapia</a
           >
           <a
-            class="nav-item nav-link"
+            class=""
             [class.active]="roll == 'accessBar'"
             (click)="roll = 'accessBar'"
             >Barras de Access</a
