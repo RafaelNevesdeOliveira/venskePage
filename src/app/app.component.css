@@ -1,5 +1,5 @@
 /* Header */
-.menu a{
+.menu-header a{
   margin-right: 8px;
   cursor: pointer;
   font-family: arial;
@@ -10,12 +10,12 @@
 
 }
 
-.menu a.active{
+.menu-header a.active{
   font-weight: bold;
   color: #03adbd;
 }
 
-.menu a:hover{
+.menu-header a:hover{
   color: #43d9e7;
 }
 
@@ -102,21 +102,67 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 40px 10px 40px 10px;
 }
 
 .treatments{
   background: rgba(3,115,126,0.5);
-  box-shadow: 2px 2px 2px rgb(1, 75, 82, 0.5);
+  box-shadow: 3px 3px 3px rgb(1, 75, 82, 0.5);
   border-radius: 8px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   margin-bottom: 40px;
-  height: 90vh;
-  width: 90vw;
+  height: 85vh;
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
+
+.menu{
+  margin-top: 40px;
+  /* margin-right: 44px; */
+  cursor: pointer;
+  font-family: arial;
+  color: rgb(167 176 177);
+  text-transform: uppercase;
+  font-weight: 500;
+  text-shadow: 0.1em 0.1em 0.05em rgb(0 0 0 / 50%);
+}
+
+.menu a{
+  margin-right: 20px;
+}
+
+.menu a.active{
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.menu a:hover{
+  color: #feffff;
+}
+
+.cardTreatments{
+  text-align: center;
+}
+
+.cardTreatments p{
+  text-align: justify;
+  padding: 25px;
+  font: 300;
+  font-size: 20px;
+  font-weight: 300;
+  color: rgba(0,0,0,0.5);
+}
+
+.cardTreatments img{
+  max-width: 30vw;
+  opacity: 75%;
+  border-radius: 25px 8px 25px 8px;
+}
+
+.microfisioterapia img{
+  height: 40vh;
 }
 
 
@@ -206,7 +252,7 @@
 
 .container-footer{
   position:absolute;
-  bottom: -20px;
+  bottom: -25px;
   width:100%;
 }
 
@@ -252,6 +298,11 @@
     border-radius: 4px;
     width: 700px;
   }
+
+  .treatments{
+    height: 70vh;
+    width: 50vw;
+  }
 }
 
 @media (max-width:780px) {
@@ -283,18 +334,19 @@
   .container-main .presentation{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 95vh;
   }
 
 
   .container-main .presentation img{
     margin-top: 20px;
     width: 100px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 
   .container-main .card-promotion img{
     width: 200px;
+    margin-bottom: 5px;
   }
 
   .container-main .text{
@@ -348,6 +400,24 @@
     width: 80vw;
   }
 
+
+  .treatments{
+    height: 80vh;
+    width: 90vw;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .menu p{
+    font-size: 15px;
+  }
+
+  .cardTreatments p{
+    font-size: 14px;
+    font-weight: normal;
+  }
+
   .contact-info{
     margin-top: 20px;
     margin-bottom: 60px;
@@ -369,6 +439,22 @@
     color: rgba(255, 255, 255, 0.801);
   }
 
+  .container-footer{
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+  }
+
+  .cardTreatments img{
+    max-width: 60vw;
+    opacity: 75%;
+    border-radius: 25px 8px 25px 8px;
+  }
+
+  .microfisioterapia img{
+    height: 20vh;
+    width: 40vw;
+  }
 
   .rodape {
     background: #03737e;

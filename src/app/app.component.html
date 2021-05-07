@@ -1,7 +1,7 @@
 <nav class="navbar navbar-dark bg-primary">
   <div class="container-header">
     <img src="assets/images/logo.webp" alt="" srcset="" />
-    <div class="nav navbar-nav menu">
+    <div class="nav navbar-nav menu-header">
       <a
         class="nav-item nav-link"
         [class.active]="aba == 'home'"
@@ -26,7 +26,6 @@
 
 <!-- MAIN -->
 <div class="container" [ngSwitch]="aba">
-
   <!-- ABOUT -->
   <div class="container-main" *ngSwitchDefault="'home'">
     <div class="wrapper-content">
@@ -75,43 +74,77 @@
   <!-- SERVICES -->
   <div class="services" *ngSwitchCase="'services'">
     <div class="treatments" [ngSwitch]="roll">
-
       <nav class="navbar navbar-dark bg-primary">
-        <div class="container-services">
-          <div class="select">
-            <div class="nav navbar-nav menu">
-              <a
-                class="nav-item nav-link"
-                [class.active]="roll == 'image'"
-                (click)="roll = 'image'"
-                >Sobre</a
-              >
-              <a
-                class="nav-item nav-link"
-                [class.active]="roll == 'services'"
-                (click)="roll = 'services'"
-                >Tratamentos</a
-              >
-              <a
-                class="nav-item nav-link"
-                [class.active]="roll == 'contact'"
-                (click)="roll = 'contact'"
-                >Contato</a
-              >
-            </div>
-          </div>
+        <div class="menu">
+          <a
+            class="nav-item nav-link"
+            [class.active]="roll == 'image'"
+            (click)="roll = 'image'"
+            >Osteopatia</a
+          >
+          <a
+            class="nav-item nav-link"
+            [class.active]="roll == 'microfisio'"
+            (click)="roll = 'microfisio'"
+            >Microfisioterapia</a
+          >
+          <a
+            class="nav-item nav-link"
+            [class.active]="roll == 'accessBar'"
+            (click)="roll = 'accessBar'"
+            >Barras de Access</a
+          >
         </div>
       </nav>
+
+      <div class="cardTreatments">
+        <div class="osteopatia" *ngSwitchDefault="'image'">
+          <p>
+            É um método que age como meio de diagnóstico e tratamento utilizando
+            recursos manuais para uma abordagem terapêutica do corpo e suas
+            dores. O tratamento através da osteopatia permite o reequilíbrio das
+            funções do organismo e do funcionamento do corpo.
+          </p>
+          <img
+            src="https://images.unsplash.com/photo-1620050382792-434b5828873d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1300&q=80"
+            alt=""
+          />
+        </div>
+
+        <div class="microfisioterapia" *ngSwitchCase="'microfisio'">
+          <p>
+            Técnica francesa de terapia manual onde através de toques suaves e
+            em locais específicos do corpo do paciente acessa determinados mapas
+            corporais com o objetivo de identificar a causa primária de uma
+            doença ou disfunção para que o equilíbrio corporal possa ser
+            restabelecido e então se faça a manutenção da saúde.
+          </p>
+          <img
+          src="https://i.pinimg.com/originals/53/83/cf/5383cf4a3f5ef87220077e21e57e14d6.jpg"
+          alt=""
+        />
+        </div>
+
+        <div class="barrasAccess" *ngSwitchCase="'accessBar'">
+          <p>
+            É uma terapia corporal que permite que você e o seu corpo comecem a
+            desprender-se dos pensamentos, ideias, condicionamentos, emoções,
+            atitudes e crenças limitantes que você tenha registrado sobre
+            quaisquer situação ou experiencia.
+          </p>
+          <img
+          src="https://rsaude.com.br/img/noticias/g/barras-de-access-uma-nova-ferramenta-quantica-de-expansao-da-consciencia-27082018111338.jpg"
+          alt=""
+        />
+        </div>
+      </div>
     </div>
-
-
   </div>
 
   <!-- CONTACT SCREEN -->
   <div class="contact" *ngSwitchCase="'contact'">
     <div class="content-contact">
       <div class="info">
-
         <div class="map">
           <a href="https://goo.gl/maps/jamXXcoikAJ32yD7A" target="_blank">
             <img src="assets/images/mapagoogle.png" />
@@ -123,7 +156,8 @@
             <ul class="contact-topics">
               <h6>
                 <i class="fas fa-info-circle"></i>
-                Informações de contato</h6>
+                Informações de contato
+              </h6>
               <li>
                 <i class="fas fa-phone-square-alt"></i>
                 Ligar (11) 95423-0818
@@ -156,12 +190,10 @@
             <img src="assets/images/facebook-icon.png" />
           </a>
         </div>
-
       </div>
     </div>
   </div>
 </div>
-
 
 <div class="carousel">
   <owl-carousel-o [options]="customOptions">
