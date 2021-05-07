@@ -65,7 +65,7 @@
   flex-direction: row;
   align-items: center;
   margin-bottom: 40px;
-  height: 90vh;
+  height: 100vh;
   width: 90vw;
 
 }
@@ -185,7 +185,7 @@
   background: rgba(3,115,126,0.5);
   box-shadow: 4px 4px 4px rgba(3,115,126,0.7);;
   border-radius: 8px;
-  height: 90vh;
+  height: 100vh;
   width: 50vw;
   display: flex;
   flex-direction: column;
