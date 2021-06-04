@@ -1,16 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Franciele Venske Fisioterapia
-  </title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,400;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-  <app-root></app-root>
-  <script src="https://kit.fontawesome.com/c4c091a01f.js" crossorigin="anonymous"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Franciele Venske Fisioterapia</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,400;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Global site tag (gtag.js) - Google Ads: 409320837 -->
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-409320837"
+    ></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("js", new Date());
+
+      gtag("config", "AW-409320837");
+    </script>
+    <!-- Event snippet for Contato conversion page
+    In your html page, add the snippet and call gtag_report_conversion
+    when someone clicks on the chosen link or button. -->
+
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+
+        gtag("event", "conversion", {
+          send_to: "AW-409320837/qdUTCNSz3rsCEIX7lsMB",
+
+          event_callback: callback,
+        });
+
+        return false;
+      }
+    </script>
+  </head>
+
+  <body>
+    <app-root></app-root>
+    <script
+      src="https://kit.fontawesome.com/c4c091a01f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
